@@ -1,8 +1,6 @@
-import React from 'react';
-import {
-  ToolButton,
-} from '@ohif/ui-next';
 import { useToolbar } from '@ohif/core/src';
+import { ToolButton } from '@ohif/ui-next';
+import React from 'react';
 
 interface ToolButtonListWrapperProps {
   buttonSection: string;
@@ -33,9 +31,7 @@ export default function ToolButtonListWrapper({ buttonSection, id }: ToolButtonL
         <ToolButton
           key={item.id}
           {...item}
-          onInteraction={({ itemId }) =>
-            onInteraction?.({ id, itemId, commands: item.commands })
-          }
+          onInteraction={({ itemId }) => onInteraction?.({ id, itemId, commands: item.commands })}
           className={item.className}
         />
       ))}
