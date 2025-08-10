@@ -15,6 +15,7 @@ function ToolbarLayoutSelectorWithServices2({
   const { customizationService } = servicesManager.services;
 
 
+
   // Get the advanced presets generator from the customization service
   const advancedPresetsGenerator = customizationService?.getCustomization(
     'layoutSelector.advancedPresetGenerator'
@@ -104,7 +105,7 @@ function ToolbarLayoutSelectorWithServices2({
         onSelectionChange={handleSelectionChange}
         {...props}
       >
-        <LayoutSelector.Trigger tooltip="Change Advanced layout" />
+        <LayoutSelector.Trigger tooltip="Change Advance layout" className='h-10 text-[#296AC3]'  />
         <LayoutSelector.Content>
               {advancedPresets.length > 0 && (
                 <LayoutSelector.PresetSection title="Advanced">

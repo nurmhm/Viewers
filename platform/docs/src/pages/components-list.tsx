@@ -8,7 +8,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
  */
 export default function ComponentsList() {
   return (
-    <Layout title="Components" description="OHIF Viewer Components">
+    <Layout title="Components" description="Radiolens Viewers Components">
       <BrowserOnly fallback={<></>}>
         {() => {
           // Dynamically require all sub-components to avoid SSR issues
