@@ -20,6 +20,11 @@ export function Toolbar({ buttonSection = 'primary', viewportId, location }: Too
     buttonSection,
   });
 
+
+  console.log(
+    toolbarButtons,
+    'toolbarButtonssssssssssssssssss',
+  )
   if (!toolbarButtons.length) {
     return null;
   }
@@ -60,7 +65,7 @@ export function Toolbar({ buttonSection = 'primary', viewportId, location }: Too
           />
         );
 
-        return <div key={id}>{tool}</div>;
+        return <div id="toolbar-item" key={id}>{tool}</div>;
       })}
     </>
   );

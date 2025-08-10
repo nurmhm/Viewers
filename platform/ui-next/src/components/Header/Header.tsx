@@ -60,8 +60,8 @@ function Header({
         isSticky={isSticky}
         {...props}
       >
-        <div className="relative h-[48px] items-center">
-          {/* <div className="absolute left-0 top-1/2 flex -translate-y-1/2 items-center">
+        <div className=" flex justify-between  pb-2 pt-2  items-center">
+          <div className=" flex  items-center">
             <div
               className={classNames(
                 'mr-3 inline-flex items-center',
@@ -70,22 +70,18 @@ function Header({
               onClick={onClickReturn}
               data-cy="return-to-work-list"
             >
-              <p>hello this is my header </p>
-             {isReturnEnabled && <Icons.ArrowLeft className="text-primary ml-1 h-7 w-7" />}
+             {/* {isReturnEnabled && <Icons.ArrowLeft className="text-primary ml-1 h-7 w-7" />} */}
               <div className="ml-1">
                 {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Icons.OHIFLogo />}
               </div>
             </div>
-          </div> */}
-          {/* <div className="absolute top-1/2 left-[250px] h-8 -translate-y-1/2">{Secondary}</div> */}
-          <div className="absolute left-0 top-1/2 flex -translate-y-1/2 items-center">
-            <div className="flex items-center justify-center space-x-2">{children}</div>
           </div>
-          <div className="absolute right-0 top-1/2 flex -translate-y-1/2 select-none items-center">
-            {UndoRedo}
-            <div className="border-primary-dark mx-1.5 h-[25px] border-r"></div>
-            {PatientInfo}
-            <div className="border-primary-dark mx-1.5 h-[25px] border-r"></div>
+          {/* <div className="absolute top-1/2 left-[250px] h-8 -translate-y-1/2">{Secondary}</div> */}
+          <div className=" flex items-center">
+            <div className="flex items-center space-x-2">{children}</div>
+          </div>
+          <div className=" flex  select-none items-center">
+
             <div className="flex-shrink-0 bg-red-500">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -99,12 +95,10 @@ function Header({
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
                   {menuOptions.map((option, index) => {
-
                     const IconComponent = option.icon
                       ? Icons[option.icon as keyof typeof Icons]
                       : null;
                     return (
-
                       <DropdownMenuItem
                         key={index}
                         onSelect={option.onClick}

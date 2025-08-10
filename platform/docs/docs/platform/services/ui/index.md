@@ -207,11 +207,7 @@ function WorkList({
   /** ... **/
 
   const menuOptions = [
-    {
-      title: t('Header:About'),
-      icon: 'info',
-      onClick: () => show({ content: AboutModal, title: 'About OHIF Viewer' }),
-    },
+    
     {
       title: t('Header:Preferences'),
       icon: 'settings',
