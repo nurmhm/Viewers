@@ -10,6 +10,7 @@ import ToolButtonListWrapper from './Toolbar/ToolButtonListWrapper';
 import ToolRowWrapper from './Toolbar/ToolRowWrapper';
 import { ToolBoxButtonGroupWrapper, ToolBoxButtonWrapper } from './Toolbar/ToolBoxWrapper';
 import { ToolButtonWrapper } from './Toolbar/ToolButtonWrapper';
+import ToolbarLayoutSelectorWithServices2 from './Toolbar/ToolbarLayoutSelector2';
 
 export default function getToolbarModule({ commandsManager, servicesManager }: withAppTypes) {
   const { cineService } = servicesManager.services;
@@ -40,6 +41,11 @@ export default function getToolbarModule({ commandsManager, servicesManager }: w
       name: 'ohif.layoutSelector',
       defaultComponent: props =>
         ToolbarLayoutSelectorWithServices({ ...props, commandsManager, servicesManager }),
+    },
+        {
+      name: 'ohif.layoutSelector2',
+      defaultComponent: props =>
+        ToolbarLayoutSelectorWithServices2({ ...props, commandsManager, servicesManager }),
     },
     {
       name: 'ohif.progressDropdown',

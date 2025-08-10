@@ -636,6 +636,15 @@ const toolbarButtons: Button[] = [
     },
   },
   {
+    id: 'Layout2',
+    uiType: 'ohif.layoutSelector2',
+    props: {
+      rows: 2,
+      columns: 3,
+      evaluate: 'evaluate.action',
+    },
+  },
+  {
     id: 'Crosshairs',
     uiType: 'ohif.toolButton',
     props: {
