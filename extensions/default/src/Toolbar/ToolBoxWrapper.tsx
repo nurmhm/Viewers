@@ -44,7 +44,7 @@ export function ToolBoxButtonGroupWrapper({ buttonSection, id }) {
 
 export function ToolBoxButtonWrapper({ onInteraction, className, options, ...props }) {
   return (
-    <div className="bg-red-500 flex flex-row rounded-md px-0 py-0">
+    <div className=" flex flex-row rounded-md px-0 py-0">
       <ToolButton
         {...props}
         id={props.id}

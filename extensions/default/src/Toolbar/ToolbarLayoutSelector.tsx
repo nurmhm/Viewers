@@ -63,7 +63,7 @@ function ToolbarLayoutSelectorWithServices({
           },
         },
         {
-          title: '3D four up',
+          title: '3D fourrrrrrrrrr up',
           icon: 'layout-four-up',
           commandOptions: {
             protocolId: '3d-four-up',
@@ -156,7 +156,7 @@ function ToolbarLayoutSelectorWithServices({
                 </>
               )}
 
-              {advancedPresets.length > 0 && (
+              {/* {advancedPresets.length > 0 && (
                 <LayoutSelector.PresetSection title="Advanced">
                   {advancedPresets.map((preset, index) => (
                     <LayoutSelector.Preset
@@ -169,7 +169,7 @@ function ToolbarLayoutSelectorWithServices({
                     />
                   ))}
                 </LayoutSelector.PresetSection>
-              )}
+              )} */}
             </div>
           )}
 

@@ -21,10 +21,6 @@ export function Toolbar({ buttonSection = 'primary', viewportId, location }: Too
   });
 
 
-  console.log(
-    toolbarButtons,
-    'toolbarButtonssssssssssssssssss',
-  )
   if (!toolbarButtons.length) {
     return null;
   }
